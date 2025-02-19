@@ -1,0 +1,126 @@
+Key Enhancements:
+Background Image:
+
+A custom background image is added using PIL (Python Imaging Library). You need to have an image called background_image.jpg in the same directory as the program. If you want to change it, simply replace the image file path.
+Progress Bar:
+
+A progress bar is added to indicate the progress of encryption. It updates visually as the encryption progresses.
+Custom Styling:
+
+The buttons, text fields, and labels are styled with a font (Arial), background colors, and padding to make the UI more appealing.
+Error Handling:
+
+Better handling of missing or incorrect user input (like when no secret message or passcode is provided).
+Requirements:
+Install Pillow (for image handling): The program uses the PIL library (from the Pillow package) to handle background images in the GUI. To install it, run:
+
+bash
+Copy
+pip install pillow
+Custom Background Image:
+
+You need an image file (e.g., background_image.jpg) that will serve as the background for the Tkinter window. Ensure this file is present in the same directory as your script, or provide a valid path to it.
+How to Run the Program:
+Install Dependencies: Install opencv-python and pillow as shown earlier.
+
+Save the Code: Save the updated code to a Python file (e.g., image_encryption_gui_with_graphics.py).
+
+Prepare the Background Image: Place your custom background image in the same directory as the Python file or update the path to your image in the code.
+
+Run the Program: Follow the previous instructions for running the program using Python. You should now see a more aesthetically pleasing GUI with a background image and progress bar.
+
+What to Expect:
+The program window will now have a background image, better-designed buttons, and a progress bar that updates during the encryption process.
+If you encounter any issues with the background image or progress bar, double-check the installation of dependencies and the image file path.
+
+                Running the Python program in **VS Code** is a straightforward process. Here’s a step-by-step guide on how to set up and run the program you created in **VS Code**:
+
+### Step 1: **Install Visual Studio Code (VS Code)**
+If you don't have **VS Code** installed, you can download it from the [official website](https://code.visualstudio.com/).
+
+### Step 2: **Install Python Extension for VS Code**
+1. Open **VS Code**.
+2. Go to the **Extensions** view by clicking on the Extensions icon in the sidebar (or pressing `Ctrl + Shift + X`).
+3. Search for **Python** in the Extensions Marketplace.
+4. Install the **Python extension** provided by Microsoft. This extension provides support for Python code editing, debugging, and running.
+
+### Step 3: **Install Python on Your System**
+Ensure that **Python** is installed on your system. You can download the latest version of Python from [python.org](https://www.python.org/downloads/).
+
+After installation, you can verify Python is installed by running this in the terminal/command prompt:
+```bash
+python --version
+```
+
+### Step 4: **Install Required Libraries**
+1. Open the **Terminal** inside VS Code:
+   - Go to **Terminal** > **New Terminal** from the top menu (or press ``Ctrl + ` ``).
+   
+2. Install the required libraries using **pip**:
+   - In the terminal, run the following commands to install **OpenCV** and **Pillow** (for image handling in Tkinter):
+   
+   ```bash
+   pip install opencv-python
+   pip install pillow
+   ```
+
+### Step 5: **Set Up Your Python Script in VS Code**
+1. Open **VS Code** and **create a new file**:
+   - Go to **File** > **New File** and paste the Python code that you've written (the encryption/decryption program).
+   
+2. Save the file:
+   - Save the file with a `.py` extension, for example, `image_encryption_gui.py`.
+
+### Step 6: **Prepare Your Image**
+Make sure you have the image (`background_image.jpg`) that you want to use for the GUI background. Ensure the image is in the **same directory** as your Python script (or specify the full path to the image in the code).
+
+### Step 7: **Configure the Python Interpreter in VS Code**
+VS Code needs to know which version of Python to use for the script. Here's how to set the Python interpreter:
+
+1. Press `Ctrl + Shift + P` to open the **Command Palette**.
+2. Type `Python: Select Interpreter`.
+3. Choose the correct interpreter (it should show something like `Python 3.x.x`).
+
+### Step 8: **Run the Program**
+1. Open the **Terminal** in VS Code (if it's not already open).
+2. Run the program by typing the following command in the terminal:
+   
+   ```bash
+   python image_encryption_gui.py
+   ```
+
+   If you're using **Python 3.x** and the above doesn't work, try:
+
+   ```bash
+   python3 image_encryption_gui.py
+   ```
+
+   This will execute your Python script in the terminal.
+
+### Step 9: **Interacting with the GUI**
+- After running the program, a window should pop up with the GUI where you can enter the message, passcode, and encrypt/decrypt images.
+- Follow the on-screen instructions to test encryption and decryption.
+
+### Troubleshooting Tips:
+- **Error in Libraries**: If you encounter errors related to missing libraries, make sure you’ve installed the libraries correctly using the terminal:
+   ```bash
+   pip install opencv-python pillow
+   ```
+- **Image Not Found**: If your background image is not found, double-check that it is in the same directory as your script, or provide the correct path to it in the code.
+
+### Step 10: **Debugging (Optional)**
+If you want to debug the program, you can:
+1. Set breakpoints by clicking to the left of line numbers.
+2. Use the **Run and Debug** feature in VS Code by clicking the **Run** button or pressing `F5`.
+
+VS Code will open a debug panel where you can see variable values, step through code, and debug errors.
+
+---
+
+### Summary of Steps:
+1. **Install VS Code** and the **Python extension**.
+2. **Install Python** and the required libraries (`opencv-python`, `pillow`).
+3. **Set up your Python script** in VS Code and ensure the image is in the same folder.
+4. **Select the Python interpreter** and run the script using the terminal.
+
+Now you can run, edit, and debug your Python program with an interactive GUI inside **VS Code**. Let me know if you need any more assistance!
